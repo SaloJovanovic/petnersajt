@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(22, 31, 165);
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#linkovi {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    margin-right: 10px;
+}
+
+.podlink {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+}
+
+.naslov {
+    text-align: center;
+}
+
+.tekst {
+    text-align: center;
+    margin: 30px;
+}
+
+#landing-page {
+    height: 50vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('pozadina.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+
+    /* KAKO SE CENTRIRA ELEMENT U DIVU */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-page-naslov {
+    color: white;
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+#landing-page-podnaslov {
+    color: white;
+    letter-spacing: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(22, 31, 165);
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 300px;
+}
+
+.link-footer {
+    list-style: none;
+}
+
+.podlink-footer {
+    color: white;
+    text-decoration: none;
+}
