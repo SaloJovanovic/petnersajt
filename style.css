@@ -12,6 +12,8 @@ header {
     background: rgb(22, 31, 165);
     padding-left: 70px;
     padding-right: 70px;
+    position: fixed;
+    width: calc(100% - 140px);
 }
 
 #linkovi {
@@ -83,4 +85,59 @@ footer {
 .podlink-footer {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        font-size: 30px;
+    }
+    #linkovi.nestani {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .burger {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .burger.cliked #line2 {
+        display: none;
+    }
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+    #linkovi {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        opacity: 1;
+        transition: all 1s ease;
+        margin-top: 240px;
+        background-color: rgb(22, 31, 165);
+        width: 100%;
+        left: 0;
+    }
+    .link {
+        padding: 10px;
+    }
+    #line2.clicked {
+        display: none;
+    }
+    #line1.clicked {
+        transform: rotateZ(45deg);
+        margin-bottom: -25px;
+    }
+    #line3.clicked {
+        transform: rotateZ(-45deg);
+    }
+    #burger-menu.cliked {
+        justify-content: center;
+    }
 }
